@@ -1,0 +1,36 @@
+/*********************************************************************
+* Project : NO1homework  -  task 2 (tick) / task 3 (IWDG reset)
+* Target  : STM32F103C8T6  (Blue Pill, 32 KiB flash)
+* Probe   : third-party DAPLink, reached through an OpenOCD GDB server
+*           OpenOCD listens on 127.0.0.1:3333  (ozone_server.bat)
+*
+* NOTE: Ozone's host interface tokens are "USB", "IP", "GDB_Server" and
+*       "Simulator".  "IP" means a J-Link reached over Ethernet (J-Link
+*       protocol) and is NOT a GDB server - that was the earlier mistake.
+*       The token below is what Ozone itself wrote back after choosing
+*       Host Interface -> "GDB Server" in Debug Settings.
+**********************************************************************
+*/
+void OnProjectLoad (void) {
+  Project.SetDevice ("STM32F103C8");
+  Project.SetHostIF ("GDB_Server", "127.0.0.1:3333");
+  Project.SetTargetIF ("SWD");
+  Project.SetTIFSpeed ("1 MHz");
+  Project.AddSvdFile ("$(InstallDir)/Config/CPU/Cortex-M3.svd");
+  //
+  // Dialect of the GDB server on the other end.
+  // Connect mode 0 = "Download & Reset Program".
+  // Reset mode 2 = "Reset & Run".
+  //
+  Edit.SysVar (VAR_GDB_SERVER_TYPE, 1);
+  Edit.SysVar (VAR_CONNECT_MODE, 0);
+  Edit.SysVar (VAR_RESET_MODE, 2);
+  File.Open ("D:/STM32MX/NO1homework/build/NO1homework.elf");
+}
+//
+// OnProjectLoad runs before Ozone has finished setting up, so kick the
+// session off from OnStartupComplete instead.
+//
+void OnStartupComplete (void) {
+  Debug.Start ();
+}

@@ -1,0 +1,46 @@
+
+ =========================================================
+  OpenOCD GDB server for Ozone
+ =========================================================
+
+  GDB port      : 3333     <- point Ozone here
+  Telnet port   : 4444
+  TCL port      : 6666
+
+  KEEP THIS WINDOW OPEN while using Ozone.
+  Ctrl+C here to stop.
+
+ =========================================================
+
+Open On-Chip Debugger 0.12.0+dev-00664-g72f14cee6 (2026-04-16-14:04) [https://github.com/STMicroelectronics/OpenOCD]
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : auto-selecting first available session transport "swd". To override use 'transport select <transport>'.
+adapter speed: 1000 kHz
+Info : CMSIS-DAP: SWD supported
+Info : CMSIS-DAP: JTAG supported
+Info : CMSIS-DAP: FW Version = 1.0
+Info : CMSIS-DAP: Interface Initialised (SWD)
+Info : SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 1 nTRST = 0 nRESET = 0
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 1000 kHz
+Info : SWD DPIDR 0x1ba01477
+Info : [stm32f1x.cpu] Cortex-M3 r1p1 processor detected
+Info : [stm32f1x.cpu] target has 6 breakpoints, 4 watchpoints
+Info : [stm32f1x.cpu] Examination succeed
+Info : starting gdb server for stm32f1x.cpu on 3333
+Info : Listening on port 3333 for gdb connections
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : accepting 'gdb' connection on tcp/3333
+Info : device id = 0x10006412
+Info : flash size = 32 KiB
+Warn : GDB connection 1 on target stm32f1x.cpu not halted
+Error: Error on socket 'GDB': WSAGetLastError==10054, message: 远程主机强迫关闭了一个现有的连接。
+.
+shutdown command invoked
+Info : dropped 'gdb' connection
+
+ Server stopped.
+请按任意键继续. . . 

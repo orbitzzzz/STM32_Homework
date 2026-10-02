@@ -1,0 +1,37 @@
+ 
+[2026/10/02 周五 16:49:00.89] swd_check start
+  try 1 no-target cannot-read-IDR
+  try 2 no-target cannot-read-IDR
+  try 3 no-target cannot-read-IDR
+  try 4 no-target cannot-read-IDR
+  try 5 no-target cannot-read-IDR
+  try 6 no-target cannot-read-IDR
+  try 7 no-target cannot-read-IDR
+  try 8 no-target cannot-read-IDR
+  try 1 no-target cannot-read-IDR
+  try 2 CONNECTED
+  try 3 CONNECTED
+  try 4 CONNECTED
+  try 5 CONNECTED
+  try 6 CONNECTED
+  try 7 CONNECTED
+  try 8 CONNECTED
+  try 9 CONNECTED
+  try 10 CONNECTED
+  try 11 CONNECTED
+  try 12 CONNECTED
+  try 13 CONNECTED
+  try 14 CONNECTED
+  try 15 CONNECTED
+  try 16 CONNECTED
+  try 17 CONNECTED
+  try 18 CONNECTED
+  try 19 CONNECTED
+  try 20 CONNECTED
+  try 21 CONNECTED
+  try 22 CONNECTED
+  try 23 CONNECTED
+  try 24 CONNECTED
+  try 25 CONNECTED
+[2026/10/02 周五 16:49:18.51] swd_check result A=0/8 B=24/25
+RESULT A=0/8 B=24/25

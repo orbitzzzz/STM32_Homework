@@ -1,0 +1,308 @@
+Open On-Chip Debugger 0.12.0+dev-00664-g72f14cee6 (2026-04-16-14:04) [https://github.com/STMicroelectronics/OpenOCD]
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+User : 3 3 options.c:52 configuration_output_handler(): debug_level: 3User : 4 4 options.c:52 configuration_output_handler(): 
+Debug: 5 4 configuration.c:33 add_script_search_dir(): adding C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.debug.openocd_2.3.400.202606220929/resources/openocd/st_scripts
+Debug: 6 6 options.c:346 parse_cmdline_args(): ARGV[0] = "C:\ST\STM32CubeIDE_2.2.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.openocd.win32_2.4.500.202604080855\tools\bin\openocd.exe"
+Debug: 7 10 options.c:346 parse_cmdline_args(): ARGV[1] = "-d3"
+Debug: 8 10 options.c:346 parse_cmdline_args(): ARGV[2] = "-s"
+Debug: 9 10 options.c:346 parse_cmdline_args(): ARGV[3] = "C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.debug.openocd_2.3.400.202606220929/resources/openocd/st_scripts"
+Debug: 10 11 options.c:346 parse_cmdline_args(): ARGV[4] = "-f"
+Debug: 11 12 options.c:346 parse_cmdline_args(): ARGV[5] = "interface/cmsis-dap.cfg"
+Debug: 12 12 options.c:346 parse_cmdline_args(): ARGV[6] = "-f"
+Debug: 13 12 options.c:346 parse_cmdline_args(): ARGV[7] = "target/stm32f1x.cfg"
+Debug: 14 13 options.c:346 parse_cmdline_args(): ARGV[8] = "-c"
+Debug: 15 13 options.c:346 parse_cmdline_args(): ARGV[9] = "adapter speed 1000"
+Debug: 16 13 options.c:346 parse_cmdline_args(): ARGV[10] = "-c"
+Debug: 17 13 options.c:346 parse_cmdline_args(): ARGV[11] = "init"
+Debug: 18 14 options.c:233 add_default_dirs(): bindir=/src/work/openocd/win32/build/bin
+Debug: 19 14 options.c:234 add_default_dirs(): pkgdatadir=/src/work/openocd/win32/build/share/openocd
+Debug: 20 15 options.c:235 add_default_dirs(): exepath=C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.openocd.win32_2.4.500.202604080855/tools/bin
+Debug: 21 15 options.c:236 add_default_dirs(): bin2data=../share/openocd
+Debug: 22 15 configuration.c:33 add_script_search_dir(): adding C:/Users/周子航/AppData/Roaming/OpenOCD
+Debug: 23 17 configuration.c:33 add_script_search_dir(): adding C:\Users\周子航/.config/openocd
+Debug: 24 17 configuration.c:33 add_script_search_dir(): adding C:\Users\周子航/.openocd
+Debug: 25 17 configuration.c:33 add_script_search_dir(): adding C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.openocd.win32_2.4.500.202604080855/tools/bin/../share/openocd/site
+Debug: 26 18 configuration.c:33 add_script_search_dir(): adding C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.openocd.win32_2.4.500.202604080855/tools/bin/../share/openocd/scripts
+Debug: 27 19 command.c:153 script_debug(): command - ocd_find interface/cmsis-dap.cfg
+Debug: 28 19 configuration.c:88 find_file(): found C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.debug.openocd_2.3.400.202606220929/resources/openocd/st_scripts/interface/cmsis-dap.cfg
+Debug: 29 22 command.c:153 script_debug(): command - adapter driver cmsis-dap
+Debug: 30 22 command.c:153 script_debug(): command - ocd_find target/stm32f1x.cfg
+Debug: 31 23 configuration.c:88 find_file(): found C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.debug.openocd_2.3.400.202606220929/resources/openocd/st_scripts/target/stm32f1x.cfg
+Debug: 32 24 command.c:153 script_debug(): command - ocd_find target/swj-dp.tcl
+Debug: 33 24 configuration.c:88 find_file(): found C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.debug.openocd_2.3.400.202606220929/resources/openocd/st_scripts/target/swj-dp.tcl
+Debug: 34 25 command.c:153 script_debug(): command - transport select
+Info : 35 26 transport.c:268 handle_transport_select(): auto-selecting first available session transport "swd". To override use 'transport select <transport>'.
+Debug: 36 26 command.c:153 script_debug(): command - ocd_find mem_helper.tcl
+Debug: 37 27 configuration.c:88 find_file(): found C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.debug.openocd_2.3.400.202606220929/resources/openocd/st_scripts/mem_helper.tcl
+Debug: 38 28 command.c:153 script_debug(): command - add_usage_text mrw address
+Debug: 39 28 command.c:153 script_debug(): command - add_help_text mrw Returns value of word in memory.
+Debug: 40 29 command.c:153 script_debug(): command - add_usage_text mrh address
+Debug: 41 29 command.c:153 script_debug(): command - add_help_text mrh Returns value of halfword in memory.
+Debug: 42 30 command.c:153 script_debug(): command - add_usage_text mrb address
+Debug: 43 30 command.c:153 script_debug(): command - add_help_text mrb Returns value of byte in memory.
+Debug: 44 30 command.c:153 script_debug(): command - add_usage_text mmw address setbits clearbits
+Debug: 45 31 command.c:153 script_debug(): command - add_help_text mmw Modify word in memory. new_val = (old_val & ~clearbits) | setbits;
+Debug: 46 31 command.c:153 script_debug(): command - ocd_find gdb_helper.tcl
+Debug: 47 32 configuration.c:88 find_file(): found C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.debug.openocd_2.3.400.202606220929/resources/openocd/st_scripts/gdb_helper.tcl
+Debug: 48 33 command.c:153 script_debug(): command - transport select
+Debug: 49 33 command.c:153 script_debug(): command - transport select
+Debug: 50 34 command.c:153 script_debug(): command - transport select
+Debug: 51 34 command.c:153 script_debug(): command - transport select
+Debug: 52 34 command.c:153 script_debug(): command - swd newdap stm32f1x cpu -irlen 4 -ircapture 0x1 -irmask 0xf -expected-id 0x1ba01477
+Debug: 53 35 tcl.c:402 handle_jtag_newtap_args(): Creating New Tap, Chip: stm32f1x, Tap: cpu, Dotted: stm32f1x.cpu, 8 params
+Debug: 54 35 core.c:1478 jtag_tap_init(): Created Tap: stm32f1x.cpu @ abs position 0, irlen 4, capture: 0x1 mask: 0xf
+Debug: 55 36 command.c:153 script_debug(): command - dap create stm32f1x.dap -chain-position stm32f1x.cpu
+Debug: 56 36 command.c:153 script_debug(): command - target create stm32f1x.cpu cortex_m -endian little -dap stm32f1x.dap -ap-num 0 -gdb-max-connections 2
+Debug: 57 37 command.c:259 register_command(): command 'tpiu' is already registered
+Debug: 58 37 command.c:259 register_command(): command 'rtt' is already registered
+Debug: 59 38 command.c:153 script_debug(): command - tpiu create stm32f1x.tpiu -dap stm32f1x.dap -ap-num 0 -baseaddr 0xE0040000
+Debug: 60 38 command.c:153 script_debug(): command - stm32f1x.cpu configure -work-area-phys 0x20000000 -work-area-size 0x1000 -work-area-backup 1
+Debug: 61 39 target.c:2150 target_free_all_working_areas_restore(): freeing all working areas
+Debug: 62 39 target.c:2150 target_free_all_working_areas_restore(): freeing all working areas
+Debug: 63 40 target.c:2150 target_free_all_working_areas_restore(): freeing all working areas
+Debug: 64 40 command.c:153 script_debug(): command - flash bank stm32f1x.flash stm32f1x 0x08000000 0 0 0 stm32f1x.cpu
+Debug: 65 41 tcl.c:1306 handle_flash_bank_command(): 'stm32f1x' driver usage field missing
+Debug: 66 41 command.c:153 script_debug(): command - adapter speed 4000
+Debug: 67 41 adapter.c:250 adapter_config_khz(): handle adapter khz
+Debug: 68 42 adapter.c:214 adapter_khz_to_speed(): convert khz to adapter specific speed value
+Debug: 69 42 adapter.c:214 adapter_khz_to_speed(): convert khz to adapter specific speed value
+Debug: 70 43 command.c:153 script_debug(): command - adapter srst delay 100
+Debug: 71 43 command.c:153 script_debug(): command - transport select
+Debug: 72 43 command.c:153 script_debug(): command - transport select
+Debug: 73 44 command.c:153 script_debug(): command - cortex_m reset_config sysresetreq
+Debug: 74 44 command.c:153 script_debug(): command - stm32f1x.cpu configure -event examine-end 
+global _ENABLE_LOW_POWER
+global _STOP_WATCHDOG
+
+	if { $_ENABLE_LOW_POWER == 1 } {
+		# Enable debug during low power modes (uses more power)
+		# DBGMCU_CR |= DBG_STANDBY | DBG_STOP | DBG_SLEEP
+		mmw 0xE0042004 0x00000007 0
+	} else {
+		# Disable debug during low power modes
+		# DBGMCU_CR |= ~(DBG_STANDBY | DBG_STOP | DBG_SLEEP)
+		mmw 0xE0042004 0 0x00000007
+	}
+	if { $_STOP_WATCHDOG == 1 } {
+		# Stop watchdog counters during halt
+		# DBGMCU_CR |= DBG_WWDG_STOP | DBG_IWDG_STOP
+		mmw 0xE0042004 0x00000300 0
+	} else {
+		# Don't stop watchdog counters during halt
+		# DBGMCU_CR |= ~(DBG_WWDG_STOP | DBG_IWDG_STOP)
+		mmw 0xE0042004 0 0x00000300
+	}
+
+Debug: 75 48 command.c:153 script_debug(): command - stm32f1x.cpu configure -event reset-init 
+global _CLOCK_FREQ
+
+	adapter speed $_CLOCK_FREQ
+
+Debug: 76 48 command.c:153 script_debug(): command - stm32f1x.cpu configure -event reset-end 
+global FLASH_LOADERS
+global NAME_INITIALIZED_LOADER
+global INDEX_INITIALIZED_LOADER
+
+	if { [info exists INDEX_INITIALIZED_LOADER] } {
+		set NAME_INITIALIZED_LOADER [lindex $FLASH_LOADERS $INDEX_INITIALIZED_LOADER]
+		set flash_list [flash list]
+		for {set i 0} {$i < [llength $flash_list]} {incr i} {
+			if { [lindex [lindex $flash_list  $i] 1] == $NAME_INITIALIZED_LOADER } {
+				set INIT_BANK_ID $i
+				break
+			}
+		}
+		if { ![info exists INIT_BANK_ID] } {
+			echo "ERROR: can't find bank_id for stldr init"
+		} else {
+			stldr init $INIT_BANK_ID
+		}
+	}
+
+Debug: 77 52 command.c:153 script_debug(): command - stm32f1x.tpiu configure -event post-enable 
+	# Set TRACE_IOEN; TRACE_MODE is set to async; when using sync
+	# change this value accordingly to configure trace pins
+	# assignment
+	mmw 0xE0042004 0x00000020 0
+
+Debug: 78 53 command.c:153 script_debug(): command - stm32f1x.cpu configure -event gdb-attach  gdb_attach_hook 
+Debug: 79 54 command.c:153 script_debug(): command - stm32f1x.cpu configure -event gdb-detach  gdb_detach_hook 
+Debug: 80 54 command.c:153 script_debug(): command - adapter speed 1000
+Debug: 81 55 adapter.c:250 adapter_config_khz(): handle adapter khz
+Debug: 82 55 adapter.c:214 adapter_khz_to_speed(): convert khz to adapter specific speed value
+Debug: 83 55 adapter.c:214 adapter_khz_to_speed(): convert khz to adapter specific speed value
+User : 84 56 options.c:52 configuration_output_handler(): adapter speed: 1000 kHzUser : 85 56 options.c:52 configuration_output_handler(): 
+Debug: 86 56 command.c:153 script_debug(): command - init
+Debug: 87 57 command.c:153 script_debug(): command - target init
+Debug: 88 57 command.c:153 script_debug(): command - target names
+Debug: 89 57 command.c:153 script_debug(): command - stm32f1x.cpu cget -event gdb-flash-erase-start
+Debug: 90 58 command.c:153 script_debug(): command - stm32f1x.cpu configure -event gdb-flash-erase-start reset init
+Debug: 91 58 command.c:153 script_debug(): command - stm32f1x.cpu cget -event gdb-flash-write-end
+Debug: 92 59 command.c:153 script_debug(): command - stm32f1x.cpu configure -event gdb-flash-write-end reset halt
+Debug: 93 59 command.c:153 script_debug(): command - stm32f1x.cpu cget -event gdb-attach
+Debug: 94 60 target.c:1608 handle_target_init_command(): Initializing targets...
+Debug: 95 60 semihosting_common.c:107 semihosting_common_init():  
+Debug: 96 147 cmsis_dap_usb_bulk.c:190 cmsis_dap_usb_open(): enumerating interfaces of 0x17ef:0xf006
+Debug: 97 214 cmsis_dap_usb_bulk.c:190 cmsis_dap_usb_open(): enumerating interfaces of 0x048d:0xc195
+Debug: 98 216 cmsis_dap_usb_bulk.c:190 cmsis_dap_usb_open(): enumerating interfaces of 0x30fa:0x0302
+Debug: 99 218 cmsis_dap_usb_bulk.c:170 cmsis_dap_usb_open(): found product string of 0xc251:0xf001 'CMSIS-DAP_LU'
+Debug: 100 219 cmsis_dap_usb_bulk.c:190 cmsis_dap_usb_open(): enumerating interfaces of 0xc251:0xf001
+Debug: 101 219 cmsis_dap_usb_bulk.c:237 cmsis_dap_usb_open(): found interface 0 string 'CMSIS-DAP CDC'
+Debug: 102 219 cmsis_dap_usb_bulk.c:250 cmsis_dap_usb_open(): skipping interface 0, has only 1 endpoints
+Debug: 103 221 cmsis_dap_usb_bulk.c:237 cmsis_dap_usb_open(): found interface 1 string 'CMSIS-DAP DCI'
+Debug: 104 221 cmsis_dap_usb_bulk.c:300 cmsis_dap_usb_open(): skipping interface 1, class 10 subclass 0 protocol 0
+Debug: 105 223 cmsis_dap_usb_bulk.c:237 cmsis_dap_usb_open(): found interface 2 string 'CMSIS-DAP_LU'
+Debug: 106 223 cmsis_dap_usb_bulk.c:257 cmsis_dap_usb_open(): skipping interface 2, endpoint[0] is not bulk out
+Debug: 107 223 cmsis_dap_usb_bulk.c:125 cmsis_dap_usb_open(): could not open device 0x5986:0x2175: Entity not found
+Debug: 108 224 cmsis_dap_usb_bulk.c:125 cmsis_dap_usb_open(): could not open device 0x8086:0x7a60: Operation not supported or unimplemented on this platform
+Debug: 109 225 cmsis_dap_usb_bulk.c:125 cmsis_dap_usb_open(): could not open device 0x0bda:0xd922: Operation not supported or unimplemented on this platform
+Info : 110 261 cmsis_dap.c:1174 cmsis_dap_get_caps_info(): CMSIS-DAP: SWD supported
+Info : 111 262 cmsis_dap.c:1174 cmsis_dap_get_caps_info(): CMSIS-DAP: JTAG supported
+Info : 112 264 cmsis_dap.c:1151 cmsis_dap_get_version_info(): CMSIS-DAP: FW Version = 1.0
+Info : 113 268 cmsis_dap.c:1308 cmsis_dap_swd_open(): CMSIS-DAP: Interface Initialised (SWD)
+Debug: 114 272 cmsis_dap.c:1393 cmsis_dap_init(): CMSIS-DAP: Packet Count = 32
+Debug: 115 273 cmsis_dap.c:1396 cmsis_dap_init(): Allocating FIFO for 4 pending packets
+Info : 116 275 cmsis_dap.c:1213 cmsis_dap_get_status(): SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 1 nTRST = 0 nRESET = 0
+Info : 117 287 cmsis_dap.c:1448 cmsis_dap_init(): CMSIS-DAP: Interface ready
+Debug: 118 287 adapter.c:214 adapter_khz_to_speed(): convert khz to adapter specific speed value
+Debug: 119 287 adapter.c:218 adapter_khz_to_speed(): have adapter set up
+Debug: 120 290 adapter.c:214 adapter_khz_to_speed(): convert khz to adapter specific speed value
+Debug: 121 290 adapter.c:218 adapter_khz_to_speed(): have adapter set up
+Info : 122 291 adapter.c:178 adapter_init(): clock speed 1000 kHz
+Debug: 123 291 openocd.c:135 handle_init_command(): Debug Adapter init complete
+Debug: 124 291 command.c:153 script_debug(): command - transport init
+Debug: 125 292 transport.c:219 handle_transport_init(): handle_transport_init
+Debug: 126 292 command.c:153 script_debug(): command - dap init
+Debug: 127 292 arm_dap.c:96 dap_init_all(): Initializing all DAPs ...
+Debug: 128 293 arm_dap.c:120 dap_init_all(): DAP stm32f1x.cpu configured by default to use ADIv5 protocol
+Debug: 129 293 cmsis_dap.c:1252 cmsis_dap_swd_switch_seq(): JTAG-to-SWD
+Info : 130 300 adi_v5_swd.c:385 swd_connect_single(): SWD DPIDR 0x1ba01477
+Debug: 131 302 arm_adi_v5.c:783 dap_dp_init(): stm32f1x.dap
+Debug: 132 302 arm_adi_v5.c:815 dap_dp_init(): DAP: wait CDBGPWRUPACK
+Debug: 133 302 arm_adi_v5.h:683 dap_dp_poll_register(): DAP: poll 4, mask 0x20000000, value 0x20000000
+Debug: 134 306 arm_adi_v5.c:823 dap_dp_init(): DAP: wait CSYSPWRUPACK
+Debug: 135 306 arm_adi_v5.h:683 dap_dp_poll_register(): DAP: poll 4, mask 0x80000000, value 0x80000000
+Debug: 136 309 cmsis_dap.c:845 cmsis_dap_swd_write_from_queue(): refusing to enable sticky overrun detection
+Debug: 137 312 openocd.c:152 handle_init_command(): Examining targets...
+Debug: 138 312 target.c:678 target_examine_one(): [stm32f1x.cpu] Examination started
+Debug: 139 313 target.c:1796 target_call_event_callbacks(): target event 19 (examine-start) for core stm32f1x.cpu
+Debug: 140 313 arm_adi_v5.c:1192 dap_get_ap(): refcount AP#0x0 get 1
+Debug: 141 315 arm_adi_v5.c:934 mem_ap_init(): MEM_AP CFG: large data 0, long address 0, big-endian 0
+Debug: 142 319 target.c:2726 target_read_u32(): address: 0xe000ed00, value: 0x411fc231
+Info : 143 319 cortex_m.c:2628 cortex_m_examine(): [stm32f1x.cpu] Cortex-M3 r1p1 processor detected
+Debug: 144 320 cortex_m.c:2640 cortex_m_examine(): [stm32f1x.cpu] cpuid: 0x411fc231
+Debug: 145 324 target.c:2726 target_read_u32(): address: 0xe000edf0, value: 0x01010001
+Debug: 146 328 armv7m_cache.c:93 armv7m_identify_cache_internal(): [stm32f1x.cpu] No cache detected
+Debug: 147 328 target.c:2814 target_write_u32(): address: 0xe000edfc, value: 0x01000000
+Debug: 148 335 target.c:2726 target_read_u32(): address: 0xe0002000, value: 0x00000261
+Debug: 149 335 target.c:2814 target_write_u32(): address: 0xe0002008, value: 0x00000000
+Debug: 150 338 target.c:2814 target_write_u32(): address: 0xe000200c, value: 0x00000000
+Debug: 151 341 target.c:2814 target_write_u32(): address: 0xe0002010, value: 0x00000000
+Debug: 152 343 target.c:2814 target_write_u32(): address: 0xe0002014, value: 0x00000000
+Debug: 153 345 target.c:2814 target_write_u32(): address: 0xe0002018, value: 0x00000000
+Debug: 154 348 target.c:2814 target_write_u32(): address: 0xe000201c, value: 0x00000000
+Debug: 155 350 target.c:2814 target_write_u32(): address: 0xe0002020, value: 0x00000000
+Debug: 156 353 target.c:2814 target_write_u32(): address: 0xe0002024, value: 0x00000000
+Debug: 157 356 cortex_m.c:2775 cortex_m_examine(): [stm32f1x.cpu] FPB fpcr 0x261, numcode 6, numlit 2
+Debug: 158 359 target.c:2726 target_read_u32(): address: 0xe0001000, value: 0x40000000
+Debug: 159 360 cortex_m.c:2442 cortex_m_dwt_setup(): [stm32f1x.cpu] DWT_CTRL: 0x40000000
+Debug: 160 363 target.c:2726 target_read_u32(): address: 0xe0001fbc, value: 0x00000000
+Debug: 161 364 cortex_m.c:2449 cortex_m_dwt_setup(): [stm32f1x.cpu] DWT_DEVARCH: 0x0
+Debug: 162 364 target.c:2814 target_write_u32(): address: 0xe0001028, value: 0x00000000
+Debug: 163 366 target.c:2814 target_write_u32(): address: 0xe0001038, value: 0x00000000
+Debug: 164 368 target.c:2814 target_write_u32(): address: 0xe0001048, value: 0x00000000
+Debug: 165 370 target.c:2814 target_write_u32(): address: 0xe0001058, value: 0x00000000
+Debug: 166 372 cortex_m.c:2498 cortex_m_dwt_setup(): [stm32f1x.cpu] DWT dwtcr 0x40000000, comp 4, watch/trigger
+Info : 167 372 cortex_m.c:2784 cortex_m_examine(): [stm32f1x.cpu] target has 6 breakpoints, 4 watchpoints
+Debug: 168 373 target.c:1796 target_call_event_callbacks(): target event 21 (examine-end) for core stm32f1x.cpu
+Debug: 169 373 target.c:4904 target_handle_event(): target: stm32f1x.cpu (cortex_m) event: 21 (examine-end) action: 
+global _ENABLE_LOW_POWER
+global _STOP_WATCHDOG
+
+	if { $_ENABLE_LOW_POWER == 1 } {
+		# Enable debug during low power modes (uses more power)
+		# DBGMCU_CR |= DBG_STANDBY | DBG_STOP | DBG_SLEEP
+		mmw 0xE0042004 0x00000007 0
+	} else {
+		# Disable debug during low power modes
+		# DBGMCU_CR |= ~(DBG_STANDBY | DBG_STOP | DBG_SLEEP)
+		mmw 0xE0042004 0 0x00000007
+	}
+	if { $_STOP_WATCHDOG == 1 } {
+		# Stop watchdog counters during halt
+		# DBGMCU_CR |= DBG_WWDG_STOP | DBG_IWDG_STOP
+		mmw 0xE0042004 0x00000300 0
+	} else {
+		# Don't stop watchdog counters during halt
+		# DBGMCU_CR |= ~(DBG_WWDG_STOP | DBG_IWDG_STOP)
+		mmw 0xE0042004 0 0x00000300
+	}
+
+Debug: 170 377 command.c:153 script_debug(): command - read_memory 0xE0042004 32 1
+Debug: 171 380 command.c:153 script_debug(): command - mww 0xE0042004 0
+Debug: 172 383 command.c:153 script_debug(): command - read_memory 0xE0042004 32 1
+Debug: 173 386 command.c:153 script_debug(): command - mww 0xE0042004 0
+Info : 174 388 target.c:694 target_examine_one(): [stm32f1x.cpu] Examination succeed
+Debug: 175 389 command.c:153 script_debug(): command - flash init
+Debug: 176 389 tcl.c:1363 handle_flash_init_command(): Initializing flash devices...
+Debug: 177 389 command.c:153 script_debug(): command - nand init
+Debug: 178 390 tcl.c:484 handle_nand_init_command(): Initializing NAND devices...
+Debug: 179 390 command.c:153 script_debug(): command - pld init
+Debug: 180 390 pld.c:337 handle_pld_init_command(): Initializing PLDs...
+Debug: 181 390 command.c:153 script_debug(): command - tpiu init
+Info : 182 391 gdb_server.c:3842 gdb_target_start(): starting gdb server for stm32f1x.cpu on 3333
+Info : 183 392 server.c:299 add_service(): Listening on port 3333 for gdb connections
+Debug: 184 392 command.c:153 script_debug(): command - target names
+Info : 185 395 server.c:299 add_service(): Listening on port 6666 for tcl connections
+Info : 186 396 server.c:299 add_service(): Listening on port 4444 for telnet connections
+Debug: 187 396 command.c:153 script_debug(): command - init
+Info : 188 13001 server.c:91 add_connection(): accepting 'gdb' connection on tcp/3333
+Debug: 189 13001 breakpoints.c:328 breakpoint_remove_all_internal(): [stm32f1x.cpu] Delete all breakpoints
+Debug: 190 13001 breakpoints.c:647 watchpoint_clear_target(): Delete all watchpoints for target: stm32f1x.cpu
+Debug: 191 13002 target.c:1796 target_call_event_callbacks(): target event 22 (gdb-attach) for core stm32f1x.cpu
+Debug: 192 13003 target.c:4904 target_handle_event(): target: stm32f1x.cpu (cortex_m) event: 22 (gdb-attach) action:  gdb_attach_hook 
+Debug: 193 13006 target.c:2726 target_read_u32(): address: 0xe0042000, value: 0x10006412
+Info : 194 13006 stm32f1x.c:828 stm32x_probe(): device id = 0x10006412
+Debug: 195 13009 arm_adi_v5.c:401 mem_ap_setup_transfer_verify_size_packing(): AP#0x0 probed size 2: supported
+Debug: 196 13012 target.c:2750 target_read_u16(): address: 0x1ffff7e0, value: 0x0020
+Info : 197 13012 stm32f1x.c:1010 stm32x_probe(): flash size = 32 KiB
+Debug: 198 13013 gdb_server.c:1065 gdb_new_connection(): New GDB Connection: 1, Target stm32f1x.cpu, state: running
+Warn : 199 13013 gdb_server.c:1080 gdb_new_connection(): GDB connection 1 on target stm32f1x.cpu not halted
+Debug: 200 13014 gdb_server.c:383 gdb_log_incoming_packet(): [stm32f1x.cpu] {1} received packet: qSupported:hwbreak+;vContSupported+
+Debug: 201 13014 gdb_server.c:401 gdb_log_outgoing_packet(): [stm32f1x.cpu] {1} sending packet: $PacketSize=4000;qXfer:memory-map:read+;qXfer:features:read+;qXfer:threads:read+;QStartNoAckMode+;vContSupported+#02
+Debug: 202 13015 gdb_server.c:383 gdb_log_incoming_packet(): [stm32f1x.cpu] {1} received packet: +
+Debug: 203 13016 gdb_server.c:383 gdb_log_incoming_packet(): [stm32f1x.cpu] {1} received packet: vMustReplyEmpty
+Debug: 204 13016 gdb_server.c:401 gdb_log_outgoing_packet(): [stm32f1x.cpu] {1} sending packet: $#00
+Debug: 205 13016 gdb_server.c:383 gdb_log_incoming_packet(): [stm32f1x.cpu] {1} received packet: +
+Debug: 206 13017 gdb_server.c:383 gdb_log_incoming_packet(): [stm32f1x.cpu] {1} received packet: vCont?
+Debug: 207 13017 gdb_server.c:401 gdb_log_outgoing_packet(): [stm32f1x.cpu] {1} sending packet: $vCont;c;C;s;S#62
+Debug: 208 13018 gdb_server.c:383 gdb_log_incoming_packet(): [stm32f1x.cpu] {1} received packet: +
+Debug: 209 13018 gdb_server.c:383 gdb_log_incoming_packet(): [stm32f1x.cpu] {1} received packet: QStartNoAckMode
+Debug: 210 13019 gdb_server.c:401 gdb_log_outgoing_packet(): [stm32f1x.cpu] {1} sending packet: $OK#9a
+Debug: 211 13019 gdb_server.c:383 gdb_log_incoming_packet(): [stm32f1x.cpu] {1} received packet: +
+Debug: 212 13020 gdb_server.c:687 gdb_get_packet_inner(): Received first acknowledgment after entering noack mode. Ignoring it.
+Debug: 213 13020 gdb_server.c:383 gdb_log_incoming_packet(): [stm32f1x.cpu] {1} received packet: qXfer:features:read:target.xml:0, 4000
+Debug: 214 13021 gdb_server.c:398 gdb_log_outgoing_packet(): [stm32f1x.cpu] {1} sending packet: $<binary-data-2295-bytes>#3a
+Debug: 215 13021 gdb_server.c:383 gdb_log_incoming_packet(): [stm32f1x.cpu] {1} received packet: qXfer:memory-map:read::0, 4000
+Debug: 216 13022 gdb_server.c:398 gdb_log_outgoing_packet(): [stm32f1x.cpu] {1} sending packet: $<binary-data-259-bytes>#bd
+Debug: 217 13023 gdb_server.c:383 gdb_log_incoming_packet(): [stm32f1x.cpu] {1} received packet: pf
+Debug: 218 13023 gdb_server.c:401 gdb_log_outgoing_packet(): [stm32f1x.cpu] {1} sending packet: $00000000#80
+Info : 219 28987 server.c:91 add_connection(): accepting 'telnet' connection on tcp/4444
+Debug: 220 28990 command.c:153 script_debug(): command - stm32f1x.cpu curstate
+Debug: 221 30027 command.c:153 script_debug(): command - exit
+Info : 222 30029 server.c:576 server_loop(): dropped 'telnet' connection
+Error: 223 63279 log.c:497 log_socket_error(): Error on socket 'GDB': WSAGetLastError==10054, message: 远程主机强迫关闭了一个现有的连接。
+.
+Debug: 224 63279 gdb_server.c:1111 gdb_connection_closed(): {1} GDB Close, Target: stm32f1x.cpu, state: running, gdb_actual_connections=0
+Debug: 225 63280 target.c:1796 target_call_event_callbacks(): target event 8 (gdb-end) for core stm32f1x.cpu
+Debug: 226 63281 target.c:1796 target_call_event_callbacks(): target event 23 (gdb-detach) for core stm32f1x.cpu
+Debug: 227 63281 target.c:4904 target_handle_event(): target: stm32f1x.cpu (cortex_m) event: 23 (gdb-detach) action:  gdb_detach_hook 
+Debug: 228 63282 command.c:153 script_debug(): command - shutdown
+User : 229 63282 server.c:760 handle_shutdown_command(): shutdown command invoked
+Info : 230 63283 server.c:576 server_loop(): dropped 'gdb' connection
+Debug: 231 63283 breakpoints.c:328 breakpoint_remove_all_internal(): [stm32f1x.cpu] Delete all breakpoints
+Debug: 232 63284 arm_adi_v5.c:1217 dap_put_ap(): refcount AP#0x0 put 0
+Debug: 233 63284 target.c:2150 target_free_all_working_areas_restore(): freeing all working areas
+Debug: 234 63285 cmsis_dap.c:1262 cmsis_dap_swd_switch_seq(): SWD-to-JTAG
